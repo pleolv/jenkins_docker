@@ -11,3 +11,5 @@ yum -y install docker-ce
 sudo systemctl start docker
 sudo systemctl enable docker
 
+firewall-cmd --zone=public --add-port=8088/tcp --permanent
+firewall-cmd --reload
